@@ -2,6 +2,7 @@ const http =require('http')
 
 const server = http.createServer((request, response)=>{
     console.log('url: ',request.url)
+    console.log('method: ',request.method)
     response.write('Hola desde un servidor NODE')
     response.end()
 })
